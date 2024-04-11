@@ -1,3 +1,4 @@
+{% load i18n %}
 <script>
     var mailchimp_master_library = {{ list_library|safe }};
     $(document).ready(function(){
@@ -59,7 +60,7 @@
 
         if(list_id_as_str != ""){
             if(mailchimp_master_library[list_id_as_str]['interest_categories'].length > 0){
-                interest_category_field_html += '<h3>GROUPS</h3><p>Add subscriber to these groups:</p>';
+                interest_category_field_html += '{% translate "<h3>GROUPS</h3><p>Add subscriber to these groups:</p>" %}';
             }
 
             for(var i in mailchimp_master_library[list_id_as_str]['interest_categories']){

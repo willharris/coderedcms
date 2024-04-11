@@ -1,12 +1,12 @@
 {% extends "coderedcms/pages/web_page.html" %}
-{% load wagtailadmin_tags wagtailcore_tags wagtailimages_tags coderedcms_tags %}
+{% load i18n wagtailadmin_tags wagtailcore_tags wagtailimages_tags coderedcms_tags %}
 {% block content_pre_body %}
 {{ block.super }}
 {% with self.most_recent_occurrence as nextup %}
 <div class="container my-5">
-  <p class="d-md-inline-block me-4"><b>When:</b> {{nextup.0}}</p>
+  <p class="d-md-inline-block me-4"><b>{% translate "When" %}:</b> {{nextup.0}}</p>
   {% if self.address %}
-  <p class="d-md-inline-block me-4"><b>Where:</b> {{self.address}}</p>
+  <p class="d-md-inline-block me-4"><b>{% translate "Where" %}:</b> {{self.address}}</p>
   {% endif %}
   <div class="float-lg-end">
     {% include "coderedcms/includes/ical/single_ical_button.html" with event=self start=nextup.0 end=nextup.1 %}
@@ -29,13 +29,13 @@
 {% block upcoming_dates %}
 {% if self.upcoming_occurrences|length > 1 %}
 <div class="container">
-  <h2>Upcoming Dates</h2>
+  <h2>{% translate "Upcoming Dates" %}</h2>
   <div class="table-responsive">
     <table class="table table-striped">
       <tr>
-        <th>Start Time</th>
-        <th>End Time</th>
-        <th>Actions</th>
+        <th>{% translate "Start Time" %}</th>
+        <th>{% translate "End Time" %}</th>
+        <th>{% translate "Actions" %}</th>
       </tr>
       {% for date in self.upcoming_occurrences %}
       <tr>
