@@ -15,9 +15,11 @@
 __pycache__
 *.egg-info/
 pip-wheel-metadata/
+poetry.lock
 
 # Environments
 .env
+.envrc
 .venv
 env/
 venv/
@@ -25,6 +27,7 @@ ENV/
 
 # Editors
 .vscode/
+.idea/
 *~
 
 # Development & testing
