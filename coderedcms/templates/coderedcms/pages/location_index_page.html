@@ -1,5 +1,5 @@
 {% extends "coderedcms/pages/web_page.html" %}
-{% load coderedcms_tags wagtailcore_tags static %}
+{% load i18n coderedcms_tags wagtailcore_tags static %}
 {% block content_body %}
 {{ block.super }}
 <div class="container">
@@ -28,7 +28,7 @@
       </div>
       <div id="LocationListEmpty" style="display:none;">
         {% block no_results %}
-        <p>There are no locations in this area. Try zooming out or moving the map to find a location.</p>
+        <p>{% blocktrans %}There are no locations in this area. Try zooming out or moving the map to find a location.{% endblocktrans %}</p>
         {% endblock %}
       </div>
     </div>

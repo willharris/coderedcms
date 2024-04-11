@@ -1,3 +1,4 @@
+{% load i18n %}
 <b>{{ page.geojson_name }}</b>
 <p>{{ page.address }}</p>
-<p><a href='{{ page.url }}'>View Location</a></p>
+<p><a href='{{ page.url }}'>{% translate "View Location" %}</a></p>

@@ -1,12 +1,12 @@
 {% extends "coderedcms/pages/web_page.html" %}
-
-{% block title %}Page not found{% endblock %}
+{% load i18n %}
+{% block title %}{% blocktrans %}Page not found{% endblocktrans %}{% endblock %}
 
 {% block body_class %}404{% endblock %}
 
 {% block content %}
 <div class="container">
-    <h1>Page not found</h1>
-    <h2>Sorry, this page could not be found.</h2>
+    <h1>{% blocktrans %}Page not found{% endblocktrans %}</h1>
+    <h2>{% blocktrans %}Sorry, this page could not be found.{% endblocktrans %}</h2>
 </div>
 {% endblock %}

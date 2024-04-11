@@ -1,4 +1,4 @@
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load i18n wagtailcore_tags wagtailimages_tags %}
 <div class="card mb-3 {{self.settings.custom_css_class}}" {% if self.settings.custom_id %}id="{{self.settings.custom_id}}"{% endif %}>
   {% with page=self.page.specific %}
   {% if page.cover_image %}
@@ -9,7 +9,7 @@
     {% if page.title %}<h5 class="card-title">{{page.title}}</h5>{% endif %}
     {% if page.caption %}<h6 class="card-subtitle mb-2 text-muted">{{self.caption}}</h6>{% endif %}
     <div class="card-text">{{page.body_preview}}</div>
-    <a class="card-link" href="{% pageurl page %}" title="{{page.title}}">Read more</a>
+    <a class="card-link" href="{% pageurl page %}" title="{{page.title}}">{% translate "Read more" %}</a>
   </div>
   {% endwith %}
 </div>

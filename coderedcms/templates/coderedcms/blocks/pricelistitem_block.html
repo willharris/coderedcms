@@ -1,9 +1,9 @@
-{% load wagtailimages_tags %}
+{% i18n load wagtailimages_tags %}
 <div class="row">
   {% if self.image %}
   <div class="col-md-4">
     {% image self.image max-1600x1600 format-webp preserve-svg as imagedata %}
-    <img src="{{imagedata.url}}" alt="Photo of {{self.name}}" class="w-100">
+    <img src="{{imagedata.url}}" alt="{% blocktrans with name=self.name %}Photo of {{name}}{% endblocktrans %}" class="w-100">
   </div>
   <div class="col-md-8" style="overflow-x: hidden;">
   {% else %}

@@ -1,3 +1,4 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html>
 
@@ -19,12 +20,12 @@
 </head>
 
 <body>
-  <h1>Internal server error</h1>
+  <h1>{% blocktrans %}Internal server error{% endblocktrans %}</h1>
   <hr>
-  <h2>Sorry, our site has experienced an error.</h2>
+  <h2>{% blocktrans %}Sorry, our site has experienced an error.{% endblocktrans %}</h2>
   <p>
-    The error has been logged and reported to an engineer.
-    Please try again soon. If the issue persists, contact us to resolve.
+    {% blocktrans %}The error has been logged and reported to an engineer.
+    Please try again soon. If the issue persists, contact us to resolve.{% endblocktrans %}
   </p>
 </body>
 
