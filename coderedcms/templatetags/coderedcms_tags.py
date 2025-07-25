@@ -70,6 +70,15 @@ def get_pictures(collection_id):
     collection = Collection.objects.get(id=collection_id)
     return get_image_model().objects.filter(collection=collection)
 
+@register.simple_tag
+def get_pictures_with_descendants(collection_id):
+    parent_collection = Collection.objects.get(id=collection_id)
+
+    # Get all descendant collections (including itself)
+    descendant_ids = parent_collection.get_descendants(inclusive=True).values_list('id', flat=True)
+
+    # Fetch images in any of those collections
+    return get_image_model().objects.filter(collection_id__in=descendant_ids)
 
 @register.simple_tag(takes_context=True)
 def get_navbar_css(context):
