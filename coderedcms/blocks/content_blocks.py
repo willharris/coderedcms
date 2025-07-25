@@ -104,6 +104,11 @@ class ImageGalleryBlock(BaseBlock):
         required=True,
         label=_("Image Collection"),
     )
+    show_descendants = blocks.BooleanBlock(
+        required=False,
+        default=False,
+        label=_("Show descendants?"),
+    )
 
     class Meta:
         template = "coderedcms/blocks/image_gallery_block.html"
