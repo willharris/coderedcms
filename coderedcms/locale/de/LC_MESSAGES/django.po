@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 15:42-0500\n"
+"POT-Creation-Date: 2026-02-25 04:57-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: gpt-po v1.0.11\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,12 +27,6 @@ msgstr "HTML"
 #: blocks/__init__.py:155 blocks/__init__.py:156 blocks/__init__.py:157
 #: blocks/__init__.py:158 blocks/__init__.py:159 blocks/__init__.py:160
 #: blocks/__init__.py:161 blocks/__init__.py:162 blocks/__init__.py:163
-#: wagtail_flexible_forms/blocks.py:255 wagtail_flexible_forms/blocks.py:256
-#: wagtail_flexible_forms/blocks.py:257 wagtail_flexible_forms/blocks.py:258
-#: wagtail_flexible_forms/blocks.py:259 wagtail_flexible_forms/blocks.py:260
-#: wagtail_flexible_forms/blocks.py:261 wagtail_flexible_forms/blocks.py:262
-#: wagtail_flexible_forms/blocks.py:263 wagtail_flexible_forms/blocks.py:264
-#: wagtail_flexible_forms/blocks.py:265 wagtail_flexible_forms/blocks.py:266
 msgid "Fields"
 msgstr "Felder"
 
@@ -40,69 +34,70 @@ msgstr "Felder"
 msgid "Button Style"
 msgstr "Schaltflächenstil"
 
-#: blocks/base_blocks.py:128 models/page_models.py:1324
+#: blocks/base_blocks.py:128 models/page_models.py:1295
 msgid "Button Size"
 msgstr "Größe der Schaltfläche"
 
-#: blocks/base_blocks.py:144 models/snippet_models.py:320
+#: blocks/base_blocks.py:133 blocks/base_blocks.py:343
+#: blocks/content_blocks.py:45
+msgid "Title"
+msgstr "Titel"
+
+#: blocks/base_blocks.py:149 models/snippet_models.py:320
 #: models/snippet_models.py:366
 msgid "Custom CSS Class"
 msgstr "Benutzerdefinierte CSS-Klasse"
 
-#: blocks/base_blocks.py:149 models/snippet_models.py:120
+#: blocks/base_blocks.py:154 models/snippet_models.py:120
 #: models/snippet_models.py:286 models/snippet_models.py:325
 #: models/snippet_models.py:371 models/snippet_models.py:478
 msgid "Custom ID"
 msgstr "Benutzerdefinierte ID"
 
-#: blocks/base_blocks.py:156
+#: blocks/base_blocks.py:161
 #: templates/wagtailadmin/block_forms/base_block_settings_struct.html:5
 msgid "Advanced Settings"
 msgstr "Erweiterte Einstellungen"
 
-#: blocks/base_blocks.py:169 models/page_models.py:274
+#: blocks/base_blocks.py:174 models/page_models.py:266
 msgid "Template"
 msgstr "Vorlage"
 
-#: blocks/base_blocks.py:185
+#: blocks/base_blocks.py:190
 msgid "Tracking Event Category"
 msgstr "Veranstaltungskategorie verfolgen"
 
-#: blocks/base_blocks.py:190
+#: blocks/base_blocks.py:195
 msgid "Tracking Event Label"
 msgstr "Tracking Event Bezeichnung"
 
-#: blocks/base_blocks.py:203
+#: blocks/base_blocks.py:208
 msgid "Column Breakpoint"
 msgstr "Spalten-Breakpoint"
 
-#: blocks/base_blocks.py:205
+#: blocks/base_blocks.py:210
 msgid ""
 "Screen size at which the column will expand horizontally or stack vertically."
 msgstr ""
 "Bildschirmgröße, bei der die Spalte horizontal erweitert oder vertikal "
 "gestapelt wird."
 
-#: blocks/base_blocks.py:271 models/page_models.py:411
+#: blocks/base_blocks.py:276 models/page_models.py:403
 #: models/snippet_models.py:375 models/snippet_models.py:504
 msgid "Content"
 msgstr "Inhalt"
 
-#: blocks/base_blocks.py:324
+#: blocks/base_blocks.py:329
 msgid "Page link"
 msgstr "Seitenlink"
 
-#: blocks/base_blocks.py:328 blocks/html_blocks.py:49
+#: blocks/base_blocks.py:333 blocks/html_blocks.py:49
 msgid "Document link"
 msgstr "Dokumentenlink"
 
-#: blocks/base_blocks.py:333
+#: blocks/base_blocks.py:338
 msgid "Other link"
 msgstr "Anderer Link"
-
-#: blocks/base_blocks.py:338 blocks/content_blocks.py:45
-msgid "Title"
-msgstr "Titel"
 
 #: blocks/content_blocks.py:40 blocks/content_blocks.py:159
 #: blocks/content_blocks.py:265 blocks/html_blocks.py:183
@@ -173,7 +168,6 @@ msgid "Display text"
 msgstr "Anzeigetext"
 
 #: blocks/content_blocks.py:170 blocks/html_blocks.py:108 forms.py:32
-#: wagtail_flexible_forms/blocks.py:61
 msgid "URL"
 msgstr "URL"
 
@@ -229,7 +223,7 @@ msgstr "Dokumentenlink mit Unterlinks"
 #: models/snippet_models.py:237 models/snippet_models.py:315
 #: models/snippet_models.py:361 models/snippet_models.py:408
 #: models/snippet_models.py:433 models/snippet_models.py:461
-#: models/snippet_models.py:500 wagtail_flexible_forms/blocks.py:274
+#: models/snippet_models.py:500
 msgid "Name"
 msgstr "Name"
 
@@ -321,7 +315,7 @@ msgstr "Benötigt API-Schlüssel zur Verwendung der Platz-ID."
 msgid "Map zoom level"
 msgstr "Zoomstufe der Karte"
 
-#: blocks/html_blocks.py:90 models/page_models.py:2180
+#: blocks/html_blocks.py:90 models/page_models.py:2064
 msgid ""
 "Requires API key to use zoom. 1: World, 5: Landmass/continent, 10: City, 15: "
 "Streets, 20: Buildings"
@@ -388,39 +382,35 @@ msgstr "Klassifiziert als"
 msgid "Only show pages that are classified with this term."
 msgstr "Zeigen Sie nur Seiten an, die mit diesem Begriff klassifiziert sind."
 
-#: blocks/html_blocks.py:235
-msgid "Show body preview"
-msgstr "Vorschau des Textkörpers anzeigen"
-
-#: blocks/html_blocks.py:239
+#: blocks/html_blocks.py:233
 msgid "Number of pages to show"
 msgstr "Anzahl der anzuzeigenden Seiten"
 
-#: blocks/html_blocks.py:245
+#: blocks/html_blocks.py:239
 msgid "Latest Pages"
 msgstr "Neueste Seiten"
 
-#: blocks/html_blocks.py:287
+#: blocks/html_blocks.py:281
 msgid "Page to preview"
 msgstr "Seite zur Vorschau"
 
-#: blocks/html_blocks.py:288
+#: blocks/html_blocks.py:282
 msgid "Show a mini preview of the selected page."
 msgstr "Zeigen Sie eine Mini-Vorschau der ausgewählten Seite."
 
-#: blocks/html_blocks.py:294
+#: blocks/html_blocks.py:288
 msgid "Page Preview"
 msgstr "Seitenvorschau"
 
-#: blocks/html_blocks.py:305
+#: blocks/html_blocks.py:299
 msgid "Quote Text"
 msgstr "Zitat Text"
 
-#: blocks/html_blocks.py:310 models/page_models.py:739
+#: blocks/html_blocks.py:304 models/page_models.py:732
 msgid "Author"
 msgstr "Autor"
 
-#: blocks/html_blocks.py:316
+#: blocks/html_blocks.py:310
 msgid "Quote"
 msgstr "Zitat"
 
@@ -548,7 +538,7 @@ msgstr "Sicheres Datei-Upload"
 msgid "Single line text"
 msgstr "Einzeiliger Text"
 
-#: forms.py:30 wagtail_flexible_forms/blocks.py:60
+#: forms.py:30
 msgid "Email"
 msgstr "E-Mail"
 
@@ -556,7 +546,7 @@ msgstr "E-Mail"
 msgid "Number - only allows integers"
 msgstr "Nummer - erlaubt nur Ganzzahlen"
 
-#: forms.py:36 wagtail_flexible_forms/blocks.py:120
+#: forms.py:36
 msgid "Choice"
 msgstr "Wahl"
 
@@ -564,7 +554,7 @@ msgstr "Wahl"
 msgid "Drop down"
 msgstr "Aufklappen"
 
-#: forms.py:40 wagtail_flexible_forms/blocks.py:126
+#: forms.py:40
 msgid "Radio buttons"
 msgstr "Optionsfelder"
 
@@ -593,7 +583,7 @@ msgid "Secure File - login required to access uploaded files"
 msgstr ""
 "Sichere Datei - Login erforderlich, um auf hochgeladene Dateien zuzugreifen."
 
-#: forms.py:58 wagtail_flexible_forms/blocks.py:267
+#: forms.py:58
 msgid "Other"
 msgstr "Anderer"
 
@@ -636,55 +626,55 @@ msgstr "Importierte Seiten werden als Unterseiten dieser Seite erstellt."
 msgid "List"
 msgstr "Liste"
 
-#: models/page_models.py:131
+#: models/page_models.py:123
 msgid "CodeRed Tag"
 msgstr "CodeRed Tag"
 
-#: models/page_models.py:145
+#: models/page_models.py:137
 msgid "CodeRed Page"
 msgstr "CodeRed Seite"
 
-#: models/page_models.py:173
+#: models/page_models.py:165
 msgid "Cover image"
 msgstr "Titelbild"
 
-#: models/page_models.py:191
+#: models/page_models.py:183
 msgid "Default Ordering"
 msgstr "Standard Sortierung"
 
-#: models/page_models.py:192
+#: models/page_models.py:184
 msgid "Date first published, newest to oldest"
 msgstr "Erstveröffentlichungsdatum, vom neuesten zum ältesten"
 
-#: models/page_models.py:193
+#: models/page_models.py:185
 msgid "Date first published, oldest to newest"
 msgstr "Erstveröffentlichungsdatum, vom ältesten zum neuesten"
 
-#: models/page_models.py:194
+#: models/page_models.py:186
 msgid "Date updated, newest to oldest"
 msgstr "Datum aktualisiert, neuestes zu ältestem"
 
-#: models/page_models.py:195
+#: models/page_models.py:187
 msgid "Date updated, oldest to newest"
 msgstr "Datum aktualisiert, vom ältesten zum neuesten"
 
-#: models/page_models.py:196
+#: models/page_models.py:188
 msgid "Title, alphabetical"
 msgstr "Titel, alphabetisch"
 
-#: models/page_models.py:197
+#: models/page_models.py:189
 msgid "Title, reverse alphabetical"
 msgstr "Titel, umgekehrt alphabetisch"
 
-#: models/page_models.py:201
+#: models/page_models.py:193
 msgid "Show list of child pages"
 msgstr "Liste der Unterseiten anzeigen"
 
-#: models/page_models.py:209
+#: models/page_models.py:201
 msgid "Order child pages by classifier"
 msgstr "Ordne Unterseiten nach Klassifizierer."
 
-#: models/page_models.py:211
+#: models/page_models.py:203
 msgid ""
 "Child pages will first be sorted following the order of this classifier’s "
 "terms (from Snippets > Classifiers)."
@@ -692,40 +682,40 @@ msgstr ""
 "Unterseiten werden zunächst nach der Reihenfolge der Begriffe dieses "
 "Klassifikators sortiert (aus Snippets > Klassifikatoren)."
 
-#: models/page_models.py:220
+#: models/page_models.py:212
 msgid "Order child pages by"
 msgstr "Ordne Unterseiten nach"
 
-#: models/page_models.py:221
+#: models/page_models.py:213
 msgid "Child pages will then be sorted by this attribute."
 msgstr "Kindseiten werden dann nach diesem Attribut sortiert."
 
-#: models/page_models.py:225
+#: models/page_models.py:217
 msgid "Number per page"
 msgstr "Anzahl pro Seite"
 
-#: models/page_models.py:230
+#: models/page_models.py:222
 msgid "Filter child pages by"
 msgstr "Filtere Unterseiten nach"
 
-#: models/page_models.py:231
+#: models/page_models.py:223
 msgid "Enable filtering child pages by these classifiers."
 msgstr ""
 "Aktivieren Sie die Filterung von Unterseiten nach diesen Klassifikatoren."
 
-#: models/page_models.py:247
+#: models/page_models.py:239
 msgid "Show list of related pages"
 msgstr "Zeige Liste der verwandten Seiten."
 
-#: models/page_models.py:252
+#: models/page_models.py:244
 msgid "Number of related pages to show"
 msgstr "Anzahl der anzuzeigenden verwandten Seiten"
 
-#: models/page_models.py:261
+#: models/page_models.py:253
 msgid "Preferred related classifier term"
 msgstr "Bevorzugter verwandter Klassifikatorbegriff"
 
-#: models/page_models.py:263
+#: models/page_models.py:255
 msgid ""
 "When getting related pages, pages with this term will be weighted over other "
 "classifier terms. By default, pages with the greatest number of classifiers "
@@ -735,11 +725,11 @@ msgstr ""
 "anderen Klassifikatorbegriffen bevorzugt. Standardmäßig werden Seiten mit "
 "der größten Anzahl gemeinsamer Klassifikatoren am höchsten eingestuft."
 
-#: models/page_models.py:293 models/snippet_models.py:146
+#: models/page_models.py:285 models/snippet_models.py:146
 msgid "Classifiers"
 msgstr "Klassifikatoren"
 
-#: models/page_models.py:295
+#: models/page_models.py:287
 msgid ""
 "Categorize and group pages together with classifiers. Used to organize and "
 "filter pages across the site."
@@ -747,181 +737,165 @@ msgstr ""
 "Kategorisieren und gruppieren Sie Seiten mit Klassifikatoren. Wird "
 "verwendet, um Seiten auf der gesamten Website zu organisieren und zu filtern."
 
-#: models/page_models.py:302
+#: models/page_models.py:294
 msgid "Tags"
 msgstr "Etiketten"
 
-#: models/page_models.py:303
+#: models/page_models.py:295
 msgid "Used to organize pages across the site."
 msgstr "Wird verwendet, um Seiten auf der gesamten Website zu organisieren."
 
-#: models/page_models.py:314
+#: models/page_models.py:306
 msgid "Content Walls"
 msgstr "Inhaltswände"
 
-#: models/page_models.py:349
+#: models/page_models.py:341
 msgid "Visual Design"
 msgstr "Visuelles Design"
 
-#: models/page_models.py:361
+#: models/page_models.py:353
 msgid "Show Child Pages"
 msgstr "Zeige Unterseiten"
 
-#: models/page_models.py:369
+#: models/page_models.py:361
 msgid "Related Pages"
 msgstr "Verwandte Seiten"
 
-#: models/page_models.py:413
+#: models/page_models.py:405
 msgid "Classify"
 msgstr "Klassifizieren"
 
-#: models/page_models.py:414
+#: models/page_models.py:406
 msgid "Layout"
 msgstr "Layout"
 
-#: models/page_models.py:415
+#: models/page_models.py:407
 msgid "SEO"
 msgstr "SEO"
 
-#: models/page_models.py:417
+#: models/page_models.py:409
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: models/page_models.py:670
+#: models/page_models.py:662
 msgid "CodeRed Web Page"
 msgstr "CodeRed-Webseite"
 
-#: models/page_models.py:712
+#: models/page_models.py:704
 msgid "CodeRed Article"
 msgstr "Artikel CodeRed"
 
-#: models/page_models.py:731
+#: models/page_models.py:724
 msgid "Caption"
 msgstr "Untertitel"
 
-#: models/page_models.py:744
+#: models/page_models.py:737
 msgid "Display author as"
 msgstr "Autor anzeigen als"
 
-#: models/page_models.py:745
+#: models/page_models.py:738
 msgid "Override how the author’s name displays on this article."
 msgstr ""
 "Überschreiben Sie, wie der Name des Autors in diesem Artikel angezeigt wird."
 
-#: models/page_models.py:750
+#: models/page_models.py:743
 msgid "Display publish date"
 msgstr "Veröffentlichungsdatum anzeigen"
 
-#: models/page_models.py:836
+#: models/page_models.py:829
 msgid "Publication Info"
 msgstr "Veröffentlichungsinformationen"
 
-#: models/page_models.py:847
+#: models/page_models.py:840
 msgid "CodeRed Article Index Page"
 msgstr "CodeRed Artikel Index Seite"
 
-#: models/page_models.py:861
-msgid "Show images"
-msgstr "Bilder anzeigen"
-
-#: models/page_models.py:868
-msgid "Show author and date info"
-msgstr "Zeige Autoren- und Datumsinformationen."
-
-#: models/page_models.py:872
-msgid "Show preview text"
-msgstr "Vorschautext anzeigen"
-
-#: models/page_models.py:883
-msgid "Child page display"
-msgstr "Anzeige der Unterseite"
-
-#: models/page_models.py:890
+#: models/page_models.py:855
 msgid "CodeRed Event"
 msgstr "CodeRed Veranstaltung"
 
-#: models/page_models.py:896
+#: models/page_models.py:865
 msgid "The color that the event will use when displayed on a calendar."
 msgstr ""
 "Die Farbe, die das Ereignis bei der Anzeige in einem Kalender verwenden wird."
 
-#: models/page_models.py:899 models/page_models.py:2022
+#: models/page_models.py:868 models/page_models.py:1906
 msgid "Address"
 msgstr "Adresse"
 
-#: models/page_models.py:906
+#: models/page_models.py:875
 msgid "Event information"
 msgstr "Veranstaltungsinformationen"
 
-#: models/page_models.py:911
+#: models/page_models.py:880
 msgid "Dates and times"
 msgstr "Termine und Zeiten"
 
-#: models/page_models.py:1047
+#: models/page_models.py:1016
 msgid "Details"
 msgstr "Einzelheiten"
 
-#: models/page_models.py:1117
+#: models/page_models.py:1088
 msgid "CodeRed Event Index Page"
 msgstr "CodeRed Ereignis Index Seite"
 
-#: models/page_models.py:1121
+#: models/page_models.py:1092
 msgid "No calendar"
 msgstr "Kein Kalender"
 
-#: models/page_models.py:1122
+#: models/page_models.py:1093
 msgid "Month"
 msgstr "Monat"
 
-#: models/page_models.py:1123
+#: models/page_models.py:1094
 msgid "Week"
 msgstr "Woche"
 
-#: models/page_models.py:1124
+#: models/page_models.py:1095
 msgid "Day"
 msgstr "Tag"
 
-#: models/page_models.py:1125
+#: models/page_models.py:1096
 msgid "List of events"
 msgstr "Liste der Veranstaltungen"
 
-#: models/page_models.py:1128
+#: models/page_models.py:1099
 msgid "Default"
 msgstr "Standard"
 
-#: models/page_models.py:1129
+#: models/page_models.py:1100
 msgid "Solid rectangles"
 msgstr "Feste Rechtecke"
 
-#: models/page_models.py:1130
+#: models/page_models.py:1101
 msgid "Dots with labels"
 msgstr "Punkte mit Beschriftungen"
 
-#: models/page_models.py:1146 models/page_models.py:1164
+#: models/page_models.py:1117 models/page_models.py:1135
 msgid "Calendar Style"
 msgstr "Kalenderstil"
 
-#: models/page_models.py:1147
+#: models/page_models.py:1118
 msgid "The default look of the calendar on this page."
 msgstr "Das Standardaussehen des Kalenders auf dieser Seite."
 
-#: models/page_models.py:1154
+#: models/page_models.py:1125
 msgid "Event Style"
 msgstr "Veranstaltungsstil"
 
-#: models/page_models.py:1155
+#: models/page_models.py:1126
 msgid "How events look on the calendar."
 msgstr "Wie Veranstaltungen im Kalender aussehen."
 
-#: models/page_models.py:1253
+#: models/page_models.py:1224
 msgid "CodeRed Event Occurrence"
 msgstr "Ereignis des CodeRed"
 
-#: models/page_models.py:1268
+#: models/page_models.py:1239
 msgid "Email form submissions to"
 msgstr "E-Mail-Formulareinreichungen an"
 
-#: models/page_models.py:1270
+#: models/page_models.py:1241
 msgid ""
 "Optional - email form submissions to this address. Separate multiple "
 "addresses by comma."
@@ -929,11 +903,11 @@ msgstr ""
 "Optional - Senden Sie Formulareinreichungen an diese Adresse. Trennen Sie "
 "mehrere Adressen durch Kommas."
 
-#: models/page_models.py:1277
+#: models/page_models.py:1248
 msgid "Reply-to address"
 msgstr "Antwortadresse"
 
-#: models/page_models.py:1279
+#: models/page_models.py:1250
 msgid ""
 "Optional - to reply to the submitter, specify the email field here. For "
 "example, if a form field above is labeled \"Your Email\", enter: "
@@ -943,170 +917,154 @@ msgstr ""
 "Wenn zum Beispiel ein Formularfeld oben mit \"Ihre E-Mail\" beschriftet ist, "
 "geben Sie ein: {{ Ihre_Email }}"
 
-#: models/page_models.py:1287 models/snippet_models.py:580
+#: models/page_models.py:1258 models/snippet_models.py:580
 msgid "Subject"
 msgstr "Betreff"
 
-#: models/page_models.py:1291
+#: models/page_models.py:1262
 msgid "Save form submissions"
 msgstr "Formulareingaben speichern"
 
-#: models/page_models.py:1293
+#: models/page_models.py:1264
 msgid "Submissions are saved to database and can be exported at any time."
 msgstr ""
 "Einreichungen werden in der Datenbank gespeichert und können jederzeit "
 "exportiert werden."
 
-#: models/page_models.py:1302 models/page_models.py:1616
+#: models/page_models.py:1273 models/page_models.py:1596
 msgid "Thank you page"
 msgstr "Danke Seite"
 
-#: models/page_models.py:1304
+#: models/page_models.py:1275
 msgid "The page users are redirected to after submitting the form."
 msgstr ""
 "Die Seite, auf die Benutzer nach dem Absenden des Formulars weitergeleitet "
 "werden."
 
-#: models/page_models.py:1309
+#: models/page_models.py:1280
 msgid "Submit"
 msgstr "Einreichen"
 
-#: models/page_models.py:1310
+#: models/page_models.py:1281
 msgid "Button text"
 msgstr "Schaltflächentext"
 
-#: models/page_models.py:1317
+#: models/page_models.py:1288
 msgid "Button style"
 msgstr "Knopfstil"
 
-#: models/page_models.py:1329
+#: models/page_models.py:1300
 msgid "Button CSS class"
 msgstr "Schaltflächen-CSS-Klasse"
 
-#: models/page_models.py:1330
+#: models/page_models.py:1301
 msgid "Custom CSS class applied to the submit button."
 msgstr "Benutzerdefinierte CSS-Klasse auf den Absende-Button angewendet."
 
-#: models/page_models.py:1335
+#: models/page_models.py:1306
 msgid "Form CSS Class"
 msgstr "Formular CSS Klasse"
 
-#: models/page_models.py:1336
+#: models/page_models.py:1307
 msgid "Custom CSS class applied to <form> element."
 msgstr "Benutzerdefinierte CSS-Klasse auf <form> Element angewendet."
 
-#: models/page_models.py:1341
+#: models/page_models.py:1312
 msgid "Form ID"
 msgstr "Formular-ID"
 
-#: models/page_models.py:1342
+#: models/page_models.py:1313
 msgid "Custom ID applied to <form> element."
 msgstr "Benutzerdefinierte ID auf <form> Element angewendet."
 
-#: models/page_models.py:1347
+#: models/page_models.py:1318
 msgid "Form go live date/time"
 msgstr "Formular Startdatum/-zeit"
 
-#: models/page_models.py:1348
+#: models/page_models.py:1319
 msgid "Date and time when the FORM goes live on the page."
 msgstr "Datum und Uhrzeit, wann das FORMULAR auf der Seite aktiv wird."
 
-#: models/page_models.py:1353
+#: models/page_models.py:1324
 msgid "Form expiry date/time"
 msgstr "Ablaufdatum/-zeit des Formulars"
 
-#: models/page_models.py:1355
+#: models/page_models.py:1326
 msgid "Date and time when the FORM will no longer be available on the page."
 msgstr ""
 "Datum und Uhrzeit, wann das FORMULAR nicht mehr auf der Seite verfügbar sein "
 "wird."
 
-#: models/page_models.py:1360
+#: models/page_models.py:1331 models/wagtailsettings_models.py:153
 msgid "Spam Protection"
 msgstr "Spamschutz"
 
-#: models/page_models.py:1362
+#: models/page_models.py:1333
 msgid ""
 "When enabled, the CMS will filter out spam form submissions for this page."
 msgstr ""
 "Wenn aktiviert, filtert das CMS Spam-Formulareinsendungen für diese Seite "
 "heraus."
 
-#: models/page_models.py:1377
+#: models/page_models.py:1348 models/wagtailsettings_models.py:249
 msgid "Form Settings"
 msgstr "Formulareinstellungen"
 
-#: models/page_models.py:1386
+#: models/page_models.py:1357
 msgid "Form Submissions"
 msgstr "Formulareingaben"
 
-#: models/page_models.py:1401
+#: models/page_models.py:1372
 msgid "Form Scheduled Publishing"
 msgstr "Geplante Veröffentlichung planen"
 
-#: models/page_models.py:1615
+#: models/page_models.py:1595
 msgid "Form"
 msgstr "Formular"
 
-#: models/page_models.py:1668
+#: models/page_models.py:1597
+msgid "SEO Preview"
+msgstr "SEO-Vorschau"
+
+#: models/page_models.py:1671
 msgid "There was an error while processing your submission.  Please try again."
 msgstr ""
 "Es gab einen Fehler bei der Verarbeitung Ihrer Einreichung. Bitte versuchen "
 "Sie es erneut."
 
-#: models/page_models.py:1717
+#: models/page_models.py:1720
 msgid "CodeRed Form Page"
 msgstr "CodeRed Formularseite"
 
-#: models/page_models.py:1736 models/page_models.py:1971
+#: models/page_models.py:1739 models/page_models.py:1850
 msgid "Confirmation Emails"
 msgstr "Bestätigungs-E-Mails"
 
-#: models/page_models.py:1765
+#: models/page_models.py:1768
 msgid "Submission date"
 msgstr "Einreichungsdatum"
 
-#: models/page_models.py:1801 wagtail_flexible_forms/models.py:313
-msgid "Not submitted"
-msgstr "Nicht eingereicht"
-
-#: models/page_models.py:1802
-msgid "Complete"
-msgstr "Vollständig"
-
-#: models/page_models.py:1803 wagtail_flexible_forms/models.py:315
-msgid "Under consideration"
-msgstr "Zur Überlegung"
-
-#: models/page_models.py:1804 wagtail_flexible_forms/models.py:316
-msgid "Approved"
-msgstr "Genehmigt"
-
-#: models/page_models.py:1805 wagtail_flexible_forms/models.py:317
-msgid "Rejected"
-msgstr "Abgelehnt"
-
-#: models/page_models.py:1955
+#: models/page_models.py:1834
 msgid "CodeRed Advanced Form Page"
 msgstr "CodeRed Fortgeschrittene Formularseite"
 
-#: models/page_models.py:2009
+#: models/page_models.py:1893
 msgid "CodeRed Location"
 msgstr "CodeRed Standort"
 
-#: models/page_models.py:2024
+#: models/page_models.py:1908
 msgid "Latitude"
 msgstr "Breitengrad"
 
-#: models/page_models.py:2027
+#: models/page_models.py:1911
 msgid "Longitude"
 msgstr "Längengrad"
 
-#: models/page_models.py:2031
+#: models/page_models.py:1915
 msgid "Auto Update Latitude and Longitude"
 msgstr "Automatische Aktualisierung von Breiten- und Längengrad"
 
-#: models/page_models.py:2033
+#: models/page_models.py:1917
 msgid ""
 "If checked, automatically update the latitude and longitude when the address "
 "is updated."
@@ -1114,55 +1072,55 @@ msgstr ""
 "Wenn aktiviert, werden Breitengrad und Längengrad automatisch aktualisiert, "
 "wenn die Adresse geändert wird."
 
-#: models/page_models.py:2040
+#: models/page_models.py:1924
 msgid "Map Title"
 msgstr "Kartentitel"
 
-#: models/page_models.py:2042
+#: models/page_models.py:1926
 msgid "If this is filled out, this is the title that will be used on the map."
 msgstr ""
 "Wenn dies ausgefüllt ist, wird dies der Titel sein, der auf der Karte "
 "verwendet wird."
 
-#: models/page_models.py:2048
+#: models/page_models.py:1932
 msgid "Map Description"
 msgstr "Kartenbeschreibung"
 
-#: models/page_models.py:2050
+#: models/page_models.py:1934
 msgid ""
 "If this is filled out, this is the description that will be used on the map."
 msgstr ""
 "Wenn dies ausgefüllt ist, wird diese Beschreibung auf der Karte verwendet."
 
-#: models/page_models.py:2053
+#: models/page_models.py:1937
 msgid "Website"
 msgstr "Webseite"
 
-#: models/page_models.py:2055
+#: models/page_models.py:1939
 msgid "Phone Number"
 msgstr "Telefonnummer"
 
-#: models/page_models.py:2070
+#: models/page_models.py:1954
 msgid "Map Layout"
 msgstr "Kartenlayout"
 
-#: models/page_models.py:2081
+#: models/page_models.py:1965
 msgid "Location Settings"
 msgstr "Standorteinstellungen"
 
-#: models/page_models.py:2154
+#: models/page_models.py:2038
 msgid "CodeRed Location Index Page"
 msgstr "CodeRed Standort Index Seite"
 
-#: models/page_models.py:2164
+#: models/page_models.py:2048
 msgid "The default latitude you want the map set to."
 msgstr "Die Standardbreitengrad, auf den Sie die Karte einstellen möchten."
 
-#: models/page_models.py:2170
+#: models/page_models.py:2054
 msgid "The default longitude you want the map set to."
 msgstr "Die Standardlängengrad-Einstellung, die Sie für die Karte wünschen."
 
-#: models/page_models.py:2192
+#: models/page_models.py:2076
 msgid "Map Display"
 msgstr "Kartenanzeige"
 
@@ -1320,29 +1278,45 @@ msgstr "BCC"
 msgid "Email Message"
 msgstr "E-Mail Nachricht"
 
-#: models/wagtailsettings_models.py:45
+#: models/wagtailsettings_models.py:46
 msgid "CRX Settings"
 msgstr "CRX Einstellungen"
 
+#: models/wagtailsettings_models.py:49
+msgid "None"
+msgstr "Keiner"
+
+#: models/wagtailsettings_models.py:50
+msgid "Basic - honeypot technique"
+msgstr "Einfach - Honeypot-Technik"
+
 #: models/wagtailsettings_models.py:53
+msgid "reCAPTCHA v3 - Invisible (requires API key)"
+msgstr "reCAPTCHA v3 - Unsichtbar (API-Schlüssel erforderlich)"
+
+#: models/wagtailsettings_models.py:57
+msgid "reCAPTCHA v2 - I am not a robot (requires API key)"
+msgstr "reCAPTCHA v2 - Ich bin kein Roboter (API-Schlüssel erforderlich)"
+
+#: models/wagtailsettings_models.py:66
 msgid "Logo"
 msgstr "Logo"
 
-#: models/wagtailsettings_models.py:54
+#: models/wagtailsettings_models.py:67
 msgid "Brand logo used in the navbar and throughout the site"
 msgstr ""
 "Markenlogo, das in der Navigationsleiste und auf der gesamten Website "
 "verwendet wird."
 
-#: models/wagtailsettings_models.py:62
+#: models/wagtailsettings_models.py:75
 msgid "Favicon"
 msgstr "Favicon"
 
-#: models/wagtailsettings_models.py:69
+#: models/wagtailsettings_models.py:82
 msgid "Navbar color scheme"
 msgstr "Farbschema der Navigationsleiste"
 
-#: models/wagtailsettings_models.py:71
+#: models/wagtailsettings_models.py:84
 msgid ""
 "Optimizes text and other navbar elements for use with light or dark "
 "backgrounds."
@@ -1350,11 +1324,11 @@ msgstr ""
 "Optimiert Text und andere Navbar-Elemente für die Verwendung mit hellen oder "
 "dunklen Hintergründen."
 
-#: models/wagtailsettings_models.py:79
+#: models/wagtailsettings_models.py:92
 msgid "Navbar CSS class"
 msgstr "Navbar CSS-Klasse"
 
-#: models/wagtailsettings_models.py:81
+#: models/wagtailsettings_models.py:94
 msgid ""
 "Custom classes applied to navbar e.g. \"bg-light\", \"bg-dark\", \"bg-"
 "primary\"."
@@ -1362,52 +1336,52 @@ msgstr ""
 "Benutzerdefinierte Klassen, die auf die Navigationsleiste angewendet werden, "
 "z. B. \"bg-light\", \"bg-dark\", \"bg-primary\"."
 
-#: models/wagtailsettings_models.py:86
+#: models/wagtailsettings_models.py:99
 msgid "Fixed navbar"
 msgstr "Feste Navigationsleiste"
 
-#: models/wagtailsettings_models.py:88
+#: models/wagtailsettings_models.py:101
 msgid "Fixed navbar will remain at the top of the page when scrolling."
 msgstr ""
 "Die fixierte Navigationsleiste bleibt beim Scrollen oben auf der Seite."
 
-#: models/wagtailsettings_models.py:93
+#: models/wagtailsettings_models.py:106
 msgid "Full width navbar contents"
 msgstr "Inhalte der vollbreiten Navigationsleiste"
 
-#: models/wagtailsettings_models.py:94
+#: models/wagtailsettings_models.py:107
 msgid "Content within the navbar will fill edge to edge."
 msgstr ""
 "Der Inhalt innerhalb der Navigationsleiste wird von Rand zu Rand gefüllt."
 
-#: models/wagtailsettings_models.py:101
+#: models/wagtailsettings_models.py:114
 msgid "Collapse navbar menu"
 msgstr "Zusammenklappbares Navigationsmenü"
 
-#: models/wagtailsettings_models.py:103
+#: models/wagtailsettings_models.py:116
 msgid ""
 "Control on what screen sizes to show and collapse the navbar menu links."
 msgstr ""
 "Kontrolle darüber, auf welchen Bildschirmgrößen die Navbar-Menü-Links "
 "angezeigt und eingeklappt werden sollen."
 
-#: models/wagtailsettings_models.py:111
+#: models/wagtailsettings_models.py:124
 msgid "Navbar format"
 msgstr "Navigationsleistenformat"
 
-#: models/wagtailsettings_models.py:115
+#: models/wagtailsettings_models.py:128
 msgid "Search box"
 msgstr "Suchfeld"
 
-#: models/wagtailsettings_models.py:116
+#: models/wagtailsettings_models.py:129
 msgid "Show search box in navbar"
 msgstr "Suchfeld in der Navigationsleiste anzeigen"
 
-#: models/wagtailsettings_models.py:121
+#: models/wagtailsettings_models.py:134
 msgid "From email address"
 msgstr "Von E-Mail-Adresse"
 
-#: models/wagtailsettings_models.py:123
+#: models/wagtailsettings_models.py:136
 msgid ""
 "The default email address this site appears to send from. For example: "
 "\"sender@example.com\" or \"Sender Name <sender@example.com>\" (without "
@@ -1417,79 +1391,112 @@ msgstr ""
 "Beispiel: \"sender@example.com\" oder \"Sender Name <sender@example.com>\" "
 "(ohne Anführungszeichen)"
 
-#: models/wagtailsettings_models.py:130
+#: models/wagtailsettings_models.py:143
 msgid "Number of results per page"
 msgstr "Anzahl der Ergebnisse pro Seite"
 
-#: models/wagtailsettings_models.py:133
+#: models/wagtailsettings_models.py:146
 msgid "Open all external links in new tab"
 msgstr "Öffnen Sie alle externen Links in einem neuen Tab."
 
-#: models/wagtailsettings_models.py:138
+#: models/wagtailsettings_models.py:155
+msgid "Choose a technique or 3rd party service to help block spam submissions."
+msgstr "Wählen Sie eine Technik oder einen Drittanbieter-Dienst, um Spam-Einreichungen zu blockieren."
+
+#: models/wagtailsettings_models.py:162
+msgid "reCAPTCHA Threshold"
+msgstr "reCAPTCHA-Schwellenwert"
+
+#: models/wagtailsettings_models.py:164
+msgid ""
+"reCAPTCHA v3 returns a score (0.0 is very likely a bot, 1.0 is very likely a "
+"good interaction). Reject submissions below this score (recommended 0.5)."
+msgstr ""
+"reCAPTCHA v3 gibt eine Bewertung zurück (0.0 ist sehr wahrscheinlich ein Bot, "
+"1.0 ist sehr wahrscheinlich eine echte Interaktion). Einreichungen unter "
+"diesem Wert ablehnen (empfohlen: 0.5)."
+
+#: models/wagtailsettings_models.py:172
+msgid "reCAPTCHA Site Key (Public)"
+msgstr "reCAPTCHA-Website-Schlüssel (öffentlich)"
+
+#: models/wagtailsettings_models.py:174 models/wagtailsettings_models.py:182
+msgid "Create this key in the Google reCAPTCHA or Google Cloud dashboard."
+msgstr "Erstellen Sie diesen Schlüssel im Google reCAPTCHA- oder Google Cloud-Dashboard."
+
+#: models/wagtailsettings_models.py:180
+msgid "reCAPTCHA Secret Key (Private)"
+msgstr "reCAPTCHA-Geheimschlüssel (privat)"
+
+#: models/wagtailsettings_models.py:188
 msgid "Google Maps API Key"
 msgstr "Google Maps API-Schlüssel"
 
-#: models/wagtailsettings_models.py:139
+#: models/wagtailsettings_models.py:189
 msgid "The API Key used for Google Maps."
 msgstr "Der API-Schlüssel, der für Google Maps verwendet wird."
 
-#: models/wagtailsettings_models.py:144
+#: models/wagtailsettings_models.py:194
 msgid "Mailchimp API Key"
 msgstr "Mailchimp API-Schlüssel"
 
-#: models/wagtailsettings_models.py:145
+#: models/wagtailsettings_models.py:195
 msgid "The API Key used for Mailchimp."
 msgstr "Der API-Schlüssel, der für Mailchimp verwendet wird."
 
-#: models/wagtailsettings_models.py:159
+#: models/wagtailsettings_models.py:209
 msgid "Site Navbar Layout"
 msgstr "Layout der Website-Navigationsleiste"
 
-#: models/wagtailsettings_models.py:163
+#: models/wagtailsettings_models.py:213
 msgid "Choose one or more navbars for your site."
 msgstr "Wählen Sie eine oder mehrere Navigationsleisten für Ihre Website aus."
 
-#: models/wagtailsettings_models.py:164 models/wagtailsettings_models.py:237
+#: models/wagtailsettings_models.py:214 models/wagtailsettings_models.py:307
 msgid "Site Navbars"
 msgstr "Website-Navigationsleisten"
 
-#: models/wagtailsettings_models.py:171
+#: models/wagtailsettings_models.py:221
 msgid "Choose one or more footers for your site."
 msgstr "Wählen Sie einen oder mehrere Fußzeilen für Ihre Website."
 
-#: models/wagtailsettings_models.py:172 models/wagtailsettings_models.py:253
+#: models/wagtailsettings_models.py:222 models/wagtailsettings_models.py:323
 msgid "Site Footers"
 msgstr "Seitenfußzeilen"
 
-#: models/wagtailsettings_models.py:182
+#: models/wagtailsettings_models.py:232
 msgid "Branding"
 msgstr "Markenbildung"
 
-#: models/wagtailsettings_models.py:190
+#: models/wagtailsettings_models.py:240
 msgid "General"
 msgstr "Allgemein"
 
-#: models/wagtailsettings_models.py:197
+#: models/wagtailsettings_models.py:256
 msgid "API Keys"
 msgstr "API-Schlüssel"
 
-#: models/wagtailsettings_models.py:272
+#: models/wagtailsettings_models.py:299
+msgid "API keys are required to use reCAPTCHA."
+msgstr "API-Schlüssel sind erforderlich, um reCAPTCHA zu verwenden."
+
+#: models/wagtailsettings_models.py:342
 msgid "Tracking"
 msgstr "Verfolgung"
 
-#: models/wagtailsettings_models.py:277
+#: models/wagtailsettings_models.py:347
 msgid "G Tracking ID"
 msgstr "G Sendungsverfolgungs-ID"
 
-#: models/wagtailsettings_models.py:278
+#: models/wagtailsettings_models.py:348
 msgid "Your Google Analytics 4 tracking ID (begins with \"G-\")"
 msgstr "Ihre Google Analytics 4 Tracking-ID (beginnt mit \"G-\")"
 
-#: models/wagtailsettings_models.py:282
+#: models/wagtailsettings_models.py:352
 msgid "Track button clicks"
 msgstr "Klicks auf Schaltflächen verfolgen"
 
-#: models/wagtailsettings_models.py:284
+#: models/wagtailsettings_models.py:354
 msgid ""
 "Track all button clicks using Google Analytics event tracking. Event "
 "tracking details can be specified in each button’s advanced settings options."
@@ -1498,35 +1505,35 @@ msgstr ""
 "Tracking. Die Details zur Event-Verfolgung können in den erweiterten "
 "Einstellungsoptionen jedes Buttons spezifiziert werden."
 
-#: models/wagtailsettings_models.py:292
+#: models/wagtailsettings_models.py:362
 msgid "Google Tag Manager ID"
 msgstr "Google Tag Manager ID"
 
-#: models/wagtailsettings_models.py:293
+#: models/wagtailsettings_models.py:363
 msgid "Begins with \"GTM-\""
 msgstr "Beginnt mit \"GTM-\""
 
-#: models/wagtailsettings_models.py:298
+#: models/wagtailsettings_models.py:368
 msgid "<head> tracking scripts"
 msgstr "<head> Tracking-Skripte"
 
-#: models/wagtailsettings_models.py:299
+#: models/wagtailsettings_models.py:369
 msgid "Add tracking scripts between the <head> tags."
 msgstr "Fügen Sie Tracking-Skripte zwischen den <head> Tags ein."
 
-#: models/wagtailsettings_models.py:304
+#: models/wagtailsettings_models.py:374
 msgid "<body> tracking scripts"
 msgstr "<body> Tracking-Skripte"
 
-#: models/wagtailsettings_models.py:305
+#: models/wagtailsettings_models.py:375
 msgid "Add tracking scripts toward closing <body> tag."
 msgstr "Fügen Sie Tracking-Skripte vor dem schließenden <body> Tag hinzu."
 
-#: models/wagtailsettings_models.py:310
+#: models/wagtailsettings_models.py:380
 msgid "Know your tracking"
 msgstr "Kenne deine Sendungsverfolgung."
 
-#: models/wagtailsettings_models.py:312
+#: models/wagtailsettings_models.py:382
 msgid ""
 "<h2>Which tracking IDs do I need?</h2><p>Before adding tracking to your "
 "site, <a href=\"https://docs.coderedcorp.com/wagtail-crx/how_to/"
@@ -1538,15 +1545,15 @@ msgstr ""
 "how_to/add_tracking_scripts.html\" target=\"_blank\">lesen Sie über den "
 "Unterschied zwischen G, UA, GTM und anderen Tracking-IDs</a>.</p>"
 
-#: models/wagtailsettings_models.py:324
+#: models/wagtailsettings_models.py:394
 msgid "Google Analytics"
 msgstr "Google Analytics"
 
-#: models/wagtailsettings_models.py:330
+#: models/wagtailsettings_models.py:400
 msgid "Google Tag Manager"
 msgstr "Google Tag Manager"
 
-#: models/wagtailsettings_models.py:337
+#: models/wagtailsettings_models.py:407
 msgid "Other Tracking Scripts"
 msgstr "Andere Tracking-Skripte"
 
@@ -1594,12 +1601,6 @@ msgstr ""
 "Der Fehler wurde protokolliert und einem Ingenieur gemeldet.\n"
 "    Bitte versuchen Sie es bald erneut. Wenn das Problem weiterhin besteht, "
 "kontaktieren Sie uns zur Lösung."
-
-#: templates/coderedcms/blocks/article_block_card.html:14
-#: templates/coderedcms/blocks/pagepreview_card.html:12
-#: templates/coderedcms/pages/page.mini.html:10
-msgid "Read more"
-msgstr "Weiterlesen"
 
 #: templates/coderedcms/blocks/content_wall_block.html:10
 #: templates/coderedcms/blocks/modal_block.html:13
@@ -1652,7 +1653,7 @@ msgstr "Filter"
 msgid "All"
 msgstr "Alle"
 
-#: templates/coderedcms/includes/form_honeypot.html:3
+#: templates/coderedcms/includes/form_button.html:6
 msgid "Leave this blank if you are a human"
 msgstr "Lassen Sie dieses Feld leer, wenn Sie ein Mensch sind."
 
@@ -1789,9 +1790,14 @@ msgstr "Sie benötigen ein Passwort, um auf diese Seite zuzugreifen."
 msgid "Continue"
 msgstr "Fahren Sie fort"
 
-#: templates/wagtailforms/list_submissions.html:11
+#: templates/wagtailforms/list_submissions.html:37
 msgid "Delete selected submissions"
 msgstr "Löschen Sie die ausgewählten Einreichungen."
+
+#: templates/wagtailforms/list_submissions.html:45
+#, python-format
+msgid "There have been no submissions of the '%(title)s' form."
+msgstr "Es gibt noch keine Einreichungen für das Formular '%(title)s'."
 
 #: templates/wagtailimportexport/import_from_csv.html:3
 #: templates/wagtailimportexport/import_from_csv.html:13
@@ -1811,7 +1817,7 @@ msgstr "Die CSV-Datei muss vor dem Importieren im korrekten Format vorliegen."
 msgid "Read the importing guide."
 msgstr "Lesen Sie den Importleitfaden."
 
-#: templates/wagtailimportexport/import_from_csv.html:35 wagtail_hooks.py:131
+#: templates/wagtailimportexport/import_from_csv.html:35 wagtail_hooks.py:123
 msgid "Import"
 msgstr "Importieren"
 
@@ -1823,193 +1829,183 @@ msgstr "Seiten importieren / exportieren"
 msgid "Import from CSV file"
 msgstr "Importieren Sie aus der CSV-Datei"
 
-#: views.py:332
+#: views.py:334
 #, python-format
 msgid "Import failed: %(reason)s"
 msgstr "Import fehlgeschlagen: %(reason)s"
 
-#: views.py:338
+#: views.py:340
 #, python-format
 msgid "%(count)s page imported."
 msgid_plural "%(count)s pages imported."
 msgstr[0] "%(count)s Seite importiert."
 msgstr[1] ""
 
-#: wagtail_flexible_forms/blocks.py:21
-msgid "Label"
-msgstr "Etikett"
+#~ msgid "Show body preview"
+#~ msgstr "Vorschau des Textkörpers anzeigen"
 
-#: wagtail_flexible_forms/blocks.py:22
-msgid "Help text"
-msgstr "Hilfetext"
+#~ msgid "Show images"
+#~ msgstr "Bilder anzeigen"
 
-#: wagtail_flexible_forms/blocks.py:56
-msgid "Required"
-msgstr "Erforderlich"
+#~ msgid "Show author and date info"
+#~ msgstr "Zeige Autoren- und Datumsinformationen."
 
-#: wagtail_flexible_forms/blocks.py:68
-msgid "Phone"
-msgstr "Telefon"
+#~ msgid "Show preview text"
+#~ msgstr "Vorschautext anzeigen"
 
-#: wagtail_flexible_forms/blocks.py:73
-msgid "Format"
-msgstr "Format"
+#~ msgid "Child page display"
+#~ msgstr "Anzeige der Unterseite"
 
-#: wagtail_flexible_forms/blocks.py:75 wagtail_flexible_forms/blocks.py:92
-#: wagtail_flexible_forms/blocks.py:101
-msgid "Default value"
-msgstr "Standardwert"
+#~ msgid "Not submitted"
+#~ msgstr "Nicht eingereicht"
 
-#: wagtail_flexible_forms/blocks.py:78
-msgid "Text field (single line)"
-msgstr "Textfeld (einfache Zeile)"
+#~ msgid "Complete"
+#~ msgstr "Vollständig"
 
-#: wagtail_flexible_forms/blocks.py:97
-msgid "Text field (multi line)"
-msgstr "Textfeld (mehrzeilig)"
+#~ msgid "Under consideration"
+#~ msgstr "Zur Überlegung"
 
-#: wagtail_flexible_forms/blocks.py:106
-msgid "Number field"
-msgstr "Zahlenfeld"
+#~ msgid "Approved"
+#~ msgstr "Genehmigt"
 
-#: wagtail_flexible_forms/blocks.py:115
-msgid "Checkbox field"
-msgstr "Kontrollkästchen-Feld"
+#~ msgid "Rejected"
+#~ msgstr "Abgelehnt"
 
-#: wagtail_flexible_forms/blocks.py:141
-msgid "Dropdown field"
-msgstr "Dropdown-Feld"
+#~ msgid "Read more"
+#~ msgstr "Weiterlesen"
 
-#: wagtail_flexible_forms/blocks.py:151
-msgid "Checkbox"
-msgstr "Kontrollkästchen"
+#~ msgid "Label"
+#~ msgstr "Etikett"
 
-#: wagtail_flexible_forms/blocks.py:157
-msgid "Multiple checkboxes field"
-msgstr "Mehrfach-Auswahlfeld"
+#~ msgid "Help text"
+#~ msgstr "Hilfetext"
 
-#: wagtail_flexible_forms/blocks.py:192
-msgid "Date field"
-msgstr "Datumsfeld"
+#~ msgid "Required"
+#~ msgstr "Erforderlich"
 
-#: wagtail_flexible_forms/blocks.py:207
-msgid "Time field"
-msgstr "Zeitfeld"
+#~ msgid "Phone"
+#~ msgstr "Telefon"
 
-#: wagtail_flexible_forms/blocks.py:234
-msgid "Date+time field"
-msgstr "Datums+Zeitfeld"
+#~ msgid "Format"
+#~ msgstr "Format"
 
-#: wagtail_flexible_forms/blocks.py:242
-msgid "Image field"
-msgstr "Bildfeld"
+#~ msgid "Default value"
+#~ msgstr "Standardwert"
 
-#: wagtail_flexible_forms/blocks.py:250
-msgid "File field"
-msgstr "Dateifeld"
+#~ msgid "Text field (single line)"
+#~ msgstr "Textfeld (einfache Zeile)"
 
-#: wagtail_flexible_forms/blocks.py:270
-msgid "Form fields"
-msgstr "Formularfelder"
+#~ msgid "Text field (multi line)"
+#~ msgstr "Textfeld (mehrzeilig)"
 
-#: wagtail_flexible_forms/blocks.py:278
-msgid "Form step"
-msgstr "Schrittform"
+#~ msgid "Number field"
+#~ msgstr "Zahlenfeld"
 
-#: wagtail_flexible_forms/blocks.py:285
-msgid "Form steps"
-msgstr "Formularschritte"
+#~ msgid "Checkbox field"
+#~ msgstr "Kontrollkästchen-Feld"
 
-#: wagtail_flexible_forms/edit_handlers.py:13
+#~ msgid "Dropdown field"
+#~ msgstr "Dropdown-Feld"
+
+#~ msgid "Checkbox"
+#~ msgstr "Kontrollkästchen"
+
+#~ msgid "Multiple checkboxes field"
+#~ msgstr "Mehrfach-Auswahlfeld"
+
+#~ msgid "Date field"
+#~ msgstr "Datumsfeld"
+
+#~ msgid "Time field"
+#~ msgstr "Zeitfeld"
+
+#~ msgid "Date+time field"
+#~ msgstr "Datums+Zeitfeld"
+
+#~ msgid "Image field"
+#~ msgstr "Bildfeld"
+
+#~ msgid "File field"
+#~ msgstr "Dateifeld"
+
+#~ msgid "Form fields"
+#~ msgstr "Formularfelder"
+
+#~ msgid "Form step"
+#~ msgstr "Schrittform"
+
+#~ msgid "Form steps"
+#~ msgstr "Formularschritte"
+
 #, python-brace-format
-msgid "{} submissions"
-msgstr "{} Einreichungen"
+#~ msgid "{} submissions"
+#~ msgstr "{} Einreichungen"
 
-#: wagtail_flexible_forms/models.py:100
 #, python-format
-msgid "Step %s"
-msgstr "Schritt %s"
+#~ msgid "Step %s"
+#~ msgstr "Schritt %s"
 
-#: wagtail_flexible_forms/models.py:306
-msgid "last modification"
-msgstr "letzte Änderung"
+#~ msgid "last modification"
+#~ msgstr "letzte Änderung"
 
-#: wagtail_flexible_forms/models.py:314
-msgid "In progress"
-msgstr "In Bearbeitung"
+#~ msgid "In progress"
+#~ msgstr "In Bearbeitung"
 
-#: wagtail_flexible_forms/models.py:322
-msgid "form submission"
-msgstr "Formulareinreichung"
+#~ msgid "form submission"
+#~ msgstr "Formulareinreichung"
 
-#: wagtail_flexible_forms/models.py:323
-msgid "form submissions"
-msgstr "Formulareingaben"
+#~ msgid "form submissions"
+#~ msgstr "Formulareingaben"
 
-#: wagtail_flexible_forms/models.py:566
-msgid "Created"
-msgstr "Erstellt"
+#~ msgid "Created"
+#~ msgstr "Erstellt"
 
-#: wagtail_flexible_forms/models.py:567
-msgid "Changed"
-msgstr "Geändert"
+#~ msgid "Changed"
+#~ msgstr "Geändert"
 
-#: wagtail_flexible_forms/models.py:568
-msgid "Deleted"
-msgstr "Gelöscht"
+#~ msgid "Deleted"
+#~ msgstr "Gelöscht"
 
-#: wagtail_flexible_forms/models.py:616
 #, python-format
-msgid "“%s” set."
-msgstr "\"%s\" festgelegt."
+#~ msgid "“%s” set."
+#~ msgstr "\"%s\" festgelegt."
 
-#: wagtail_flexible_forms/models.py:618
 #, python-format
-msgid "“%s” set to “%s”."
-msgstr "\"%s\" auf \"%s\" gesetzt."
+#~ msgid "“%s” set to “%s”."
+#~ msgstr "\"%s\" auf \"%s\" gesetzt."
 
-#: wagtail_flexible_forms/models.py:622
 #, python-format
-msgid "“%s” unset."
-msgstr "\"%s\" nicht gesetzt."
+#~ msgid "“%s” unset."
+#~ msgstr "\"%s\" nicht gesetzt."
 
-#: wagtail_flexible_forms/models.py:626
 #, python-format
-msgid "“%s” changed."
-msgstr "\"%s\" geändert."
+#~ msgid "“%s” changed."
+#~ msgstr "\"%s\" geändert."
 
-#: wagtail_flexible_forms/models.py:629
 #, python-format
-msgid "“%s” changed from “%s” to “%s”."
-msgstr "\"%s\" wurde von \"%s\" zu \"%s\" geändert."
+#~ msgid "“%s” changed from “%s” to “%s”."
+#~ msgstr "\"%s\" wurde von \"%s\" zu \"%s\" geändert."
 
-#: wagtail_flexible_forms/models.py:651
-msgid "Submission created."
-msgstr "Einreichung erstellt."
+#~ msgid "Submission created."
+#~ msgstr "Einreichung erstellt."
 
-#: wagtail_flexible_forms/models.py:653
-msgid "Submission deleted."
-msgstr "Einreichung gelöscht."
+#~ msgid "Submission deleted."
+#~ msgstr "Einreichung gelöscht."
 
-#: wagtail_flexible_forms/models.py:783
-msgid "Successfully submitted the form."
-msgstr "Das Formular wurde erfolgreich eingereicht."
+#~ msgid "Successfully submitted the form."
+#~ msgstr "Das Formular wurde erfolgreich eingereicht."
 
-#: wagtail_flexible_forms/models.py:811
-msgid "Status"
-msgstr "Status"
+#~ msgid "Status"
+#~ msgstr "Status"
 
-#: wagtail_flexible_forms/models.py:812
-msgid "User"
-msgstr "Benutzer"
+#~ msgid "User"
+#~ msgstr "Benutzer"
 
-#: wagtail_flexible_forms/models.py:813
-msgid "First modification"
-msgstr "Erste Änderung"
+#~ msgid "First modification"
+#~ msgstr "Erste Änderung"
 
-#: wagtail_flexible_forms/models.py:814
-msgid "Last modification"
-msgstr "Letzte Änderung"
+#~ msgid "Last modification"
+#~ msgstr "Letzte Änderung"
 
 #~ msgid "Button Title"
 #~ msgstr "Schaltflächentitel"
