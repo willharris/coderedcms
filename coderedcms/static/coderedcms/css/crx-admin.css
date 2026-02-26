@@ -52,6 +52,8 @@ textarea.monospace,
 
 /* Streamfield editor */
 
+/* TODO: Remove .crx-collapsible styles — dead code since switch to
+   Wagtail 7.1 native collapsed StructBlocks. See coderedcorp/coderedcms#707 */
 .crx-collapsible {
   padding:0;
   margin: -16px 0 10px 0;

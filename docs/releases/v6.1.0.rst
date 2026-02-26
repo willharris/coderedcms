@@ -1,0 +1,16 @@
+v6.1.0 release notes
+====================
+
+
+New features
+------------
+
+* Use Wagtail's native collapsible StructBlock (added in Wagtail 7.1) for
+  "Advanced Settings" panels, replacing the custom ``crx-collapsible`` button.
+  Fixes `#707 <https://github.com/coderedcorp/coderedcms/issues/707>`_.
+
+
+Upgrade considerations
+----------------------
+
+Minimum supported Wagtail version is now 7.1 (previously 7.0).

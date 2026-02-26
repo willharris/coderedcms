@@ -155,10 +155,8 @@ class CoderedAdvSettings(blocks.StructBlock):
     )
 
     class Meta:
-        form_template = (
-            "wagtailadmin/block_forms/base_block_settings_struct.html"
-        )
         label = _("Advanced Settings")
+        collapsed = True
 
     def __init__(self, local_blocks=None, template_choices=None, **kwargs):
         if not local_blocks:

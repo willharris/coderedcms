@@ -5,6 +5,8 @@ License: https://github.com/coderedcorp/coderedcms/blob/main/LICENSE
 @license magnet:?xt=urn:btih:c80d50af7d3db9be66a4d0a86db0286e4fd33292&dn=bsd-3-clause.txt BSD-3-Clause
 */
 
+// TODO: Remove crx-collapsible toggle — dead code since switch to
+// Wagtail 7.1 native collapsed StructBlocks. See coderedcorp/coderedcms#707
 $(document).ready(function(){
     $(document).on('click', '.crx-collapsible button', function(){
         var $target = $(this).parent().find('.crx-collapsible-target');
