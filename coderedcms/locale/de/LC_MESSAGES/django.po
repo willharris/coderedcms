@@ -1029,8 +1029,8 @@ msgstr "SEO-Vorschau"
 #: models/page_models.py:1671
 msgid "There was an error while processing your submission.  Please try again."
 msgstr ""
-"Es gab einen Fehler bei der Verarbeitung Ihrer Einreichung. Bitte versuchen "
-"Sie es erneut."
+"Bei der Verarbeitung Ihrer Anfrage ist ein Fehler aufgetreten. Bitte "
+"versuchen Sie es erneut."
 
 #: models/page_models.py:1720
 msgid "CodeRed Form Page"
@@ -1736,7 +1736,7 @@ msgstr "Danke"
 
 #: templates/coderedcms/pages/form_page_landing.html:6
 msgid "We have successfully received your submission."
-msgstr "Wir haben Ihre Einreichung erfolgreich erhalten."
+msgstr "Wir haben Ihre Anfrage erfolgreich erhalten."
 
 #: templates/coderedcms/pages/location_index_page.html:31
 msgid ""
